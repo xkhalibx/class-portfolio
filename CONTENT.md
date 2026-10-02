@@ -1,6 +1,6 @@
 # Caleb Breton Portfolio
 
-Caleb is currently a student at Michigan State University (MSU), part-time pharmacy technician, and tech enthusiast based in Michigan.
+Caleb is currently a student at Michigan State University (MSU), part-time pharmacy technician, and tech enthusiast based in Michigan
 
 At MSU, I am currently studying Information Science as my major with a minor in Information Technology (IT). I am a nationally certified technician at the company Meijer where I work at on the weekends while I am not in school. I love to mess around with tech of any kind. I grew up in a family that loved working on cars and electronics so if it has something to do with either or, I am interested in it.
 
