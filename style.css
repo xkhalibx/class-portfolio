@@ -1,0 +1,161 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f5f2;
+  color: #1f1f1f;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+  text-align: center;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #2d3a4d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #7b4d2a;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+}
+
+section {
+  background: #ffffff;
+  border: 1px solid #e8e2d9;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+main > section:first-of-type {
+  border-top: 3px solid #d0b89d;
+}
+
+section h2 {
+  border-bottom: 2px solid #e8e2d9;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.02em;
+  color: #1b1b1b;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p, li, a {
+  font-size: 1rem;
+}
+
+main p {
+  max-width: 68ch;
+}
+
+article {
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 3px solid #d0b89d;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 1.5rem 2rem;
+  color: #5c5c5c;
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+main a {
+  color: #3c5d7a;
+}
+
+main a:hover,
+main a:focus {
+  color: #7b4d2a;
+}
