@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -10,15 +11,46 @@ html {
   a {
     transition: none;
   }
+=======
+:root {
+  color-scheme: light;
+  --page: #f7f5f2;
+  --surface: #ffffff;
+  --text: #1f1f1f;
+  --heading: #1b1b1b;
+  --border: #e8e2d9;
+  --accent: #d0b89d;
+  --link: #3c5d7a;
+  --nav-link: #2d3a4d;
+  --hover: #7b4d2a;
+  --footer: #5c5c5c;
+  --shadow: rgba(0, 0, 0, 0.04);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #171b1c;
+  --surface: #232a2b;
+  --text: #e3e7e4;
+  --heading: #f3f1e9;
+  --border: #3a4543;
+  --accent: #c9a477;
+  --link: #9dc6d2;
+  --nav-link: #d4dfd9;
+  --hover: #e0b985;
+  --footer: #b6c0bb;
+  --shadow: rgba(0, 0, 0, 0.2);
+>>>>>>> abed2c2 (updated the readme, added javascript to complete the assignment for this week)
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f7f5f2;
-  color: #1f1f1f;
+  background: var(--page);
+  color: var(--text);
   line-height: 1.7;
   margin: 0;
   padding: 0;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 header {
@@ -45,14 +77,14 @@ nav ul {
 }
 
 nav a {
-  color: #2d3a4d;
+  color: var(--nav-link);
   text-decoration: none;
   font-weight: 600;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #7b4d2a;
+  color: var(--hover);
   text-decoration: underline;
 }
 
@@ -63,20 +95,20 @@ main {
 }
 
 section {
-  background: #ffffff;
-  border: 1px solid #e8e2d9;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 main > section:first-of-type {
-  border-top: 3px solid #d0b89d;
+  border-top: 3px solid var(--accent);
 }
 
 section h2 {
-  border-bottom: 2px solid #e8e2d9;
+  border-bottom: 2px solid var(--border);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -84,7 +116,7 @@ section h2 {
 h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0.02em;
-  color: #1b1b1b;
+  color: var(--heading);
 }
 
 h1 {
@@ -112,7 +144,7 @@ main p {
 
 article {
   padding: 0.5rem 0 0.5rem 1rem;
-  border-left: 3px solid #d0b89d;
+  border-left: 3px solid var(--accent);
 }
 
 article h3 {
@@ -168,7 +200,7 @@ address {
 footer {
   text-align: center;
   padding: 1rem 1.5rem 2rem;
-  color: #5c5c5c;
+  color: var(--footer);
 }
 
 footer p {
@@ -189,12 +221,40 @@ section p:last-child {
 }
 
 main a {
-  color: #3c5d7a;
+  color: var(--link);
 }
 
 main a:hover,
 main a:focus {
-  color: #7b4d2a;
+  color: var(--hover);
+}
+
+.theme-toggle {
+  margin-top: 1rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* =========================
