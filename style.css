@@ -2,16 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  a {
-    transition: none;
-  }
-=======
 :root {
   color-scheme: light;
   --page: #f7f5f2;
@@ -40,7 +30,6 @@ html {
   --hover: #e0b985;
   --footer: #b6c0bb;
   --shadow: rgba(0, 0, 0, 0.2);
->>>>>>> abed2c2 (updated the readme, added javascript to complete the assignment for this week)
 }
 
 body {
