@@ -164,7 +164,7 @@ article h3 {
 }
 
 #accomplishments article {
-  background: #fafafa;
+  background: var(--page);
   padding: 1rem;
   border-radius: 12px;
 }
